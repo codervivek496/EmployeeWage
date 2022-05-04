@@ -1,0 +1,15 @@
+C:\Users\LENOVO\source\repos\empWage\empWage\obj\Debug\net6.0\empWage.csproj.AssemblyReference.cache
+C:\Users\LENOVO\source\repos\empWage\empWage\obj\Debug\net6.0\empWage.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LENOVO\source\repos\empWage\empWage\obj\Debug\net6.0\empWage.AssemblyInfoInputs.cache
+C:\Users\LENOVO\source\repos\empWage\empWage\obj\Debug\net6.0\empWage.AssemblyInfo.cs
+C:\Users\LENOVO\source\repos\empWage\empWage\obj\Debug\net6.0\empWage.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\source\repos\empWage\empWage\bin\Debug\net6.0\empWage.exe
+C:\Users\LENOVO\source\repos\empWage\empWage\bin\Debug\net6.0\empWage.deps.json
+C:\Users\LENOVO\source\repos\empWage\empWage\bin\Debug\net6.0\empWage.runtimeconfig.json
+C:\Users\LENOVO\source\repos\empWage\empWage\bin\Debug\net6.0\empWage.dll
+C:\Users\LENOVO\source\repos\empWage\empWage\bin\Debug\net6.0\empWage.pdb
+C:\Users\LENOVO\source\repos\empWage\empWage\obj\Debug\net6.0\empWage.dll
+C:\Users\LENOVO\source\repos\empWage\empWage\obj\Debug\net6.0\refint\empWage.dll
+C:\Users\LENOVO\source\repos\empWage\empWage\obj\Debug\net6.0\empWage.pdb
+C:\Users\LENOVO\source\repos\empWage\empWage\obj\Debug\net6.0\empWage.genruntimeconfig.cache
+C:\Users\LENOVO\source\repos\empWage\empWage\obj\Debug\net6.0\ref\empWage.dll
