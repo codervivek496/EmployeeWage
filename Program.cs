@@ -6,6 +6,8 @@ namespace empWage
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Employee Wage Computation Program");
-        }
+            EmpWage empWage = new EmpWage();
+            empWage.checkingpresentORAbsent();        }
+
     }
 }
