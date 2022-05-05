@@ -9,6 +9,7 @@ namespace empWage
             EmpWage empWage = new EmpWage();
             empWage.checkingpresentORAbsent();
             empWage.CaclEmpDailyWage();
+            empWage.CheckEmpFullOrPartTime();
         }
     }
 }

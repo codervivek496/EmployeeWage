@@ -10,36 +10,52 @@ namespace empWage
     {
         int WAGE_PER_HOUR = 20;
         int FULL_DAY_HOUR = 8;
+        int PART_TIME_HOUR = 4;
+        int FullTimeSalary;
+        int PartTimeSalary;
         bool IsPresent;
+        bool IsFullTime;
+        bool IsPartTime;
+        Random value = new Random();
 
         public void checkingpresentORAbsent()
         {
-            Random value = new Random();
             int empCheck = value.Next(0, 2);
             if (empCheck == 1)
             {
                 IsPresent = true;
-                Console.WriteLine("Employee is present");
+                Console.WriteLine("Full Time Employee is Present");
             }
             else
             {
                 IsPresent = false;
-                Console.WriteLine("Employee is Absent");
+                Console.WriteLine("Full Time Employee is Absent");
             }
         }
         public void CaclEmpDailyWage()
         {
-            int empDailyWage = 0;
-            if (IsPresent)
+            if(IsPresent)
             {
-                FULL_DAY_HOUR = 8;
+                FullTimeSalary = WAGE_PER_HOUR * FULL_DAY_HOUR;
+                Console.WriteLine("Daily wage of full time employee is " + FullTimeSalary);
+            }
+
+        }
+        public void CheckEmpFullOrPartTime()
+        {
+            int num = value.Next(0, 2);
+            if (num == 1)
+            {
+                IsPartTime = true;
+                Console.WriteLine("Part Time employee is present ");
+                PartTimeSalary = WAGE_PER_HOUR * PART_TIME_HOUR;
+                Console.WriteLine("Daily Wage wage of part time employee is " +PartTimeSalary );
             }
             else
             {
-                FULL_DAY_HOUR = 0;
+                IsPartTime = false;
+                Console.WriteLine("Part Time Employee is absent ");
             }
-                empDailyWage = WAGE_PER_HOUR * FULL_DAY_HOUR;
-                Console.WriteLine("Employee Daily Wage is" + empDailyWage);
         }
     }
 }
