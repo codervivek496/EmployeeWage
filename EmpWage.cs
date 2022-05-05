@@ -11,8 +11,10 @@ namespace empWage
         int WAGE_PER_HOUR = 20;
         int FULL_DAY_HOUR = 8;
         int PART_TIME_HOUR = 4;
-        int FullTimeSalary;
+        int FullTimeWage;
         int PartTimeSalary;
+        int Wage;
+        int partTimeWage;
         bool IsPresent;
         bool IsFullTime;
         bool IsPartTime;
@@ -36,8 +38,8 @@ namespace empWage
         {
             if(IsPresent)
             {
-                FullTimeSalary = WAGE_PER_HOUR * FULL_DAY_HOUR;
-                Console.WriteLine("Daily wage of full time employee is " + FullTimeSalary);
+                FullTimeWage = WAGE_PER_HOUR * FULL_DAY_HOUR;
+                Console.WriteLine("Daily wage of full time employee is " + FullTimeWage);
             }
 
         }
@@ -57,5 +59,35 @@ namespace empWage
                 Console.WriteLine("Part Time Employee is absent ");
             }
         }
+    
+        //******** Using Switch Case Statement ******//
+
+        public void usingswitch()
+        {
+            int num1 = value.Next(0, 2);
+            switch(num1)
+            {
+                case 0:
+                    Console.WriteLine("Full time employee");
+                    Wage = WAGE_PER_HOUR * FULL_DAY_HOUR;
+                    Console.WriteLine("Wage of full time employee is " + Wage);
+                    break;
+
+                case 1:
+                    Console.WriteLine("Part time employee");
+                    partTimeWage = WAGE_PER_HOUR * PART_TIME_HOUR;
+                    Console.WriteLine("Wages of  part time employee is " +partTimeWage);
+                    break;
+
+                default:
+                    Console.WriteLine("Employee is Absent");
+                    break;
+
+
+                        
+            }
+        }
+
     }
 }
+
