@@ -7,7 +7,8 @@ namespace empWage
         {
             Console.WriteLine("Welcome to Employee Wage Computation Program");
             EmpWage empWage = new EmpWage();
-            empWage.checkingpresentORAbsent();        }
-
+            empWage.checkingpresentORAbsent();
+            empWage.CaclEmpDailyWage();
+        }
     }
 }
