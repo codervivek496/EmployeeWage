@@ -11,15 +11,19 @@ namespace empWage
         int WAGE_PER_HOUR = 20;
         int FULL_DAY_HOUR = 8;
         int PART_TIME_HOUR = 4;
+        int WORKING_DAYS = 20;
         int FullTimeWage;
         int PartTimeSalary;
         int Wage;
         int partTimeWage;
+        int monthlyWagesFullTime;
+        int monthlyWagesPartTime;
         bool IsPresent;
         bool IsFullTime;
         bool IsPartTime;
         Random value = new Random();
 
+        //***************** USING IF ELSE STATEMENT ************************
         public void checkingpresentORAbsent()
         {
             int empCheck = value.Next(0, 2);
@@ -57,6 +61,8 @@ namespace empWage
             {
                 IsPartTime = false;
                 Console.WriteLine("Part Time Employee is absent ");
+                Console.WriteLine("*****************");
+                Console.WriteLine("***************** ");
             }
         }
     
@@ -88,6 +94,24 @@ namespace empWage
             }
         }
 
+        public void monthlywages()
+        {
+            int num2 = value.Next(0, 2);
+            switch(num2)
+            {
+                case 0:
+                    monthlyWagesFullTime = WAGE_PER_HOUR * FULL_DAY_HOUR * WORKING_DAYS;
+                    Console.WriteLine("Monthly wages for full time employee " + monthlyWagesFullTime);
+                    break;
+                case 1:
+                    monthlyWagesPartTime = WAGE_PER_HOUR * PART_TIME_HOUR * WORKING_DAYS;
+                    Console.WriteLine("Monthly wages for part time employee " + monthlyWagesPartTime);
+                    break;
+                default :
+                    Console.WriteLine("Employee is Absent in this month ");
+                    break;
+            }
+        }
     }
 }
 
