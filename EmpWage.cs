@@ -12,12 +12,17 @@ namespace empWage
         int FULL_DAY_HOUR = 8;
         int PART_TIME_HOUR = 4;
         int WORKING_DAYS = 20;
+        int maxWorkingHours = 100;
         int FullTimeWage;
         int PartTimeSalary;
         int Wage;
         int partTimeWage;
         int monthlyWagesFullTime;
         int monthlyWagesPartTime;
+        int totalEmpHrs = 0;
+        int totalWorkingDays = 0;
+        int empHrs;
+        int totalWage;
         bool IsPresent;
         bool IsFullTime;
         bool IsPartTime;
@@ -111,6 +116,29 @@ namespace empWage
                     Console.WriteLine("Employee is Absent in this month ");
                     break;
             }
+        }
+        public void totaoWorkingDaysOrHoursReached()
+        {
+            while (totalEmpHrs<maxWorkingHours && totalWorkingDays<WORKING_DAYS)
+            {
+                totalWorkingDays++;
+                int num3 = value.Next(0, 2);
+                switch (num3)
+                {
+                    case 0:
+                        empHrs = 8;
+                        break;
+                    case 1:
+                        empHrs = 4;
+                        break;
+                    default:
+                        empHrs = 0;
+                        break;
+                }
+                totalEmpHrs=(totalEmpHrs + empHrs);
+            }
+            totalWage=(totalEmpHrs + WAGE_PER_HOUR);
+            Console.WriteLine("Wages till a total working hours (100 Hrs) or days (20  Days) is reached is " +totalWage);
         }
     }
 }

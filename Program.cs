@@ -12,6 +12,7 @@ namespace empWage
             empWage.CheckEmpFullOrPartTime();
             empWage.usingswitch();
             empWage.monthlywages();
+            empWage.totaoWorkingDaysOrHoursReached();
         }
     }
 }
